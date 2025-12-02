@@ -54,8 +54,7 @@ export default function Page() {
       <Box
         sx={{
           position: "relative",
-          height: { xs: 300, md: 400 },
-          backgroundImage: "url('/banner.jpg')",
+          height: { xs: "100%", md: "100%" },
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
@@ -68,12 +67,12 @@ export default function Page() {
         <Box
           sx={{
             bgcolor: "rgba(0,0,0,0.5)",
-            p: { xs: 2, md: 4 },
+            p: { xs: 1, md: 4 },
             borderRadius: 3,
-            width: { xs: "95%", md: "70%" },
+            width: { xs: "100%", md: "100%" },
           }}
         >
-          <Typography variant="h3" color="white" align="center" gutterBottom>
+          <Typography sx={{fontSize: {xs: "25px", sm: "35px", md: "50px"},}} variant="h3" color="white" align="center" gutterBottom>
             Find Your Dream Property
           </Typography>
           <Typography variant="body1" color="white" align="center" mb={2}>
